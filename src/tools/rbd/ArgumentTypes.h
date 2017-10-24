@@ -70,6 +70,7 @@ static const std::string IMAGE_STRIPE_UNIT("stripe-unit");
 static const std::string IMAGE_STRIPE_COUNT("stripe-count");
 static const std::string IMAGE_DATA_POOL("data-pool");
 static const std::string IMAGE_SPARSE_SIZE("sparse-size");
+static const std::string IMAGE_THICK("thick");
 
 static const std::string JOURNAL_OBJECT_SIZE("journal-object-size");
 static const std::string JOURNAL_SPLAY_WIDTH("journal-splay-width");
