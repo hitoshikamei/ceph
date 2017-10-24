@@ -265,7 +265,8 @@ Skip test on FreeBSD as it generates different output there.
                     [--stripe-count <stripe-count>] [--data-pool <data-pool>] 
                     [--journal-splay-width <journal-splay-width>] 
                     [--journal-object-size <journal-object-size>] 
-                    [--journal-pool <journal-pool>] --size <size> 
+                    [--journal-pool <journal-pool>] [--thick] --size <size> 
+                    [--no-progress] 
                     <image-spec> 
   
   Create an empty image.
@@ -293,7 +294,9 @@ Skip test on FreeBSD as it generates different output there.
     --journal-splay-width arg number of active journal objects
     --journal-object-size arg size of journal objects
     --journal-pool arg        pool for journal objects
+    --thick                   thick image provisioned
     -s [ --size ] arg         image size (in M/G/T) [default: M]
+    --no-progress             disable progress output
   
   Image Features:
     (*) supports enabling/disabling on existing images
