@@ -189,9 +189,11 @@ Commands
   If image is a clone, information about its parent is also displayed.
   If a snapshot is specified, whether it is protected is shown as well.
 
-:command:`create` (-s | --size *size-in-M/G/T*) [--image-format *format-id*] [--object-size *size-in-B/K/M*] [--stripe-unit *size-in-B/K/M* --stripe-count *num*] [--image-feature *feature-name*]... [--image-shared] *image-spec*
+:command:`create` (-s | --size *size-in-M/G/T*) [--image-format *format-id*] [--object-size *size-in-B/K/M*] [--stripe-unit *size-in-B/K/M* --stripe-count *num*] [--thick] [--image-feature *feature-name*]... [--image-shared] *image-spec*
   Will create a new rbd image. You must also specify the size via --size.  The
   --stripe-unit and --stripe-count arguments are optional, but must be used together.
+  If the --thick is enabled, it will create a thick image.
+  It will take a long time to do.
 
 :command:`clone` [--object-size *size-in-B/K/M*] [--stripe-unit *size-in-B/K/M* --stripe-count *num*] [--image-feature *feature-name*] [--image-shared] *parent-snap-spec* *child-image-spec*
   Will create a clone (copy-on-write child) of the parent snapshot.
